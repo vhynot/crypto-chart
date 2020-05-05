@@ -1,0 +1,31 @@
+@font-face {
+    font-family: Regular;
+    src: url(../fonts/Roboto-Regular.ttf)
+}
+
+@mixin center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Regular;
+}
+
+.navbar {
+    @include center();
+    height: 8vh;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.chart {
+    @include center();
+    background: rgb(43, 40, 40);
+    height: 92vh;
+}
