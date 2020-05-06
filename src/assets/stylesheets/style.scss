@@ -26,6 +26,15 @@
 
 .chart {
     @include center();
+    flex-direction: column;
     background: rgb(43, 40, 40);
     height: 92vh;
+    &__title {
+        color: white;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .recharts-legend-item-text {
+        color: white;
+    }
 }
