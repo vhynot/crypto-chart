@@ -29,12 +29,34 @@
     flex-direction: column;
     background: rgb(43, 40, 40);
     height: 92vh;
+
     &__title {
         color: white;
         font-size: 25px;
         margin-bottom: 30px;
     }
-    .recharts-legend-item-text {
-        color: white;
+    .recharts-default-tooltip {
+        color: #494747;
+        background-color: #e4e2e2a2;
+    }
+}
+
+.period-selector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 40px;
+    border-top: 1px solid #494747;
+    color: white;
+    &__option {
+        @include center();
+        height: 100%;
+        width: 16.67%;
+        cursor: pointer;
+        &--active {
+            border: 1px solid #494747;
+            border-top: none;
+        }
     }
 }

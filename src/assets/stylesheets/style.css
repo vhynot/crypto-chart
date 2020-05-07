@@ -51,7 +51,44 @@
   margin-bottom: 30px;
 }
 
-.chart .recharts-legend-item-text {
+.chart .recharts-default-tooltip {
+  color: #494747;
+  background-color: #e4e2e2a2;
+}
+
+.period-selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 40px;
+  border-top: 1px solid #494747;
   color: white;
+}
+
+.period-selector__option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 16.67%;
+  cursor: pointer;
+}
+
+.period-selector__option--active {
+  border: 1px solid #494747;
+  border-top: none;
 }
 /*# sourceMappingURL=style.css.map */
